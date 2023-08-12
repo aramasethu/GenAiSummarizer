@@ -5,7 +5,7 @@ from langchain.chains.llm import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain.chains.combine_documents.stuff import StuffDocumentsChain
 
-loader = WebBaseLoader("https://huggingface.co/meta-llama/Llama-2-70b-chat-hf")
+loader = WebBaseLoader("https://huggingface.co/docs/transformers/index")
 docs = loader.load()
 
 llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-16k")
