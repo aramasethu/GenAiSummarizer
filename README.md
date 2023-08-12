@@ -16,3 +16,16 @@ then try
 export HNSWLIB_NO_NATIVE=1 
 ```
 as per guidance [here](https://stackoverflow.com/a/75870031).
+
+Running the summarizer code requires open AI api. Add you openAI api key in the environment like this:
+
+On Linux / Mac
+
+```
+export OPENAI_API_KEY='your-api-key-here'
+```
+
+On Windows - Command Prompt:
+```
+set OPENAI_API_KEY=your-api-key-here
+```
