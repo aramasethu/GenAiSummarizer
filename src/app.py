@@ -36,6 +36,7 @@ def process():
     docs = loader.load()
 
     result = stuff_chain.run(docs)
+    #result = "This app works"
     
     return render_template('result.html', result=result)
 
