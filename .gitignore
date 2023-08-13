@@ -1,2 +1,6 @@
+# VS Code settings
+.vscode/
+
+# Virtual environments
 venv/
-.vercel
+
