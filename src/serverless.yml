@@ -1,0 +1,22 @@
+service: ai_summarize
+
+provider:
+  name: aws
+  runtime: python3.8
+  stage: prod
+  region: us-east-1
+
+plugins:
+  - serverless-wsgi
+
+custom:
+  wsgi:
+    app: app.app
+    packRequirements: false
+
+functions:
+  app:
+    handler: wsgi_handler.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'

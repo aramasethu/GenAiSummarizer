@@ -6,3 +6,4 @@ bs4
 flask
 requests==2.24.0
 numpy==1.19.2
+serverless-wsgi
