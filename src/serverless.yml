@@ -1,4 +1,4 @@
-service: ai_summarize
+service: GenAiSummarizer
 
 provider:
   name: aws
